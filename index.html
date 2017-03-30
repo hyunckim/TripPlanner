@@ -1,16 +1,32 @@
 <html>
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <style type="text/css">
-      #map {
-        height: 400px;
-        width: 80%;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="my_style.css">
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAj-vRC7i6fOe2uvHJoQMvdyOI18x6yyAY"></script>
     <script src="lib/bundle.js"></script>
   </head>
   <body>
-    <div id="map"></div>
+    <div class="container">
+      <h2>My Trip Planner</h2>
+      <div id="map"></div>
+      <div class="configuration">
+        <div class="settings">
+          <h3>Configuration</h3>
+          <label>Generation
+            <input type="text" value="50" class="generation"></input>
+          </label>
+          <label for="">Population
+            <input type="text" value="10"></input>
+          </label>
+          <label for="">Mutation Rate
+            <input type="text" value="0.01"></input>
+          </label>
+        <div>
+        <div class="results">
+          <button class="start">Start</button>
+          <button class="clear">Clear</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

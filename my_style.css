@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #e5e5e5;
+  background-image: url('docs/image/road_trip.jpg');
+  background-repeat: no-repeat;
+}
+
+#map {
+  height: 400px;
+  width: 500px;
+}
+
+.container {
+  display: flex;
+  width: 500px;
+  height: 100vh;
+  flex-direction: column;
+  background-color: white;
+  padding: 0 10px;
+}
+
+.configuration {
+  display: flex;
+  flex-direction: row;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+}
+
+.results {
+
+}
+
+.generation {
+
+}
