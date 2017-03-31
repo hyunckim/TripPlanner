@@ -2,7 +2,7 @@
 
 [Live link](https://hyunckim.github.io/TripPlanner/)
 
-![demo_2](/dosc/trip_planner.gif)
+![demo_2](/docs/trip_planner.gif)
 
 #### Background
 
