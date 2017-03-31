@@ -3,31 +3,58 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="my_style.css">
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAj-vRC7i6fOe2uvHJoQMvdyOI18x6yyAY"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <script src="lib/bundle.js"></script>
   </head>
   <body>
     <div class="container">
       <h2 class="title">My Trip Planner</h2>
-      <h4 class="description">Traveling Salesperson Problem</h4>
-      <div id="map"></div>
-      <div class="configuration">
-        <div class="settings">
-          <h3>Configuration</h3>
-          <label>Generation
-            <input type="text" value="50" class="generation"></input>
-          </label>
-          <label for="">Population
-            <input type="text" value="10"></input>
-          </label>
-          <label for="">Mutation Rate
-            <input type="text" value="0.01"></input>
-          </label>
-        <div>
-        <div class="results">
-          <h3>Result</h3>
-          <button class="start">Start</button>
-          <button class="clear">Clear</button>
-        </div>
+      <h4 class="description">Traveling Salesperson Problem Using Genetic Algorithm<i class="fa fa-info-circle fa-fw" aria-hidden="true"></i></h4>
+      <div class="display">
+        <div id="map"></div>
+        <div class="configuration">
+          <div class="options">
+            <label for="travelMode">Travel Mode</label>
+            <select name="travelMode" class="select">
+              <option value="driving">driving</option>
+              <option value="bicycling">bicycling</option>
+              <option value="walking">walking</option>
+            </select>
+
+            <label for="tolls">Avoid Tolls</label>
+            <select name="tolls" class="select">
+              <option value="false">false</option>
+              <option value="true">true</option>
+            </select>
+
+            <label for="highways">Avoid Highways</label>
+            <select name="highways" class="select">
+              <option value="false">false</option>
+              <option value="true">true</option>
+            </select>
+
+          </div>
+          <div class="settings">
+            <h3>Configuration</h3>
+            <label>Generation
+              <input type="text" value="50" class="generation"></input>
+            </label>
+            <label for="">Population
+              <input type="text" value="10"></input>
+            </label>
+            <label for="">Mutation Rate
+              <input type="text" value="0.01"></input>
+            </label>
+              <div class="results">
+                <h3>Result</h3>
+                <p class="generation">Generation: 0</p>
+                <p>Max destinations: 10</p>
+                <p class="duration"></p>
+                <p class="distance"></p>
+                <button class="start">Start</button>
+                <button class="clear">Clear</button>
+              </div>
+          </div>
       </div>
     </div>
   </body>
