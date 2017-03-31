@@ -1,4 +1,5 @@
 ## Trip Planner
+Traveling Salesperson Problem with Google Map API as visualizer.
 
 [Live link](https://hyunckim.github.io/TripPlanner/)
 
@@ -6,26 +7,39 @@
 
 #### Background
 
-Tetris is a classic game from the 1980's where tiles(tetriminos), made up of 4 squares, are arranged into a row. When a row is filled it is cleared. Tetriminos are randomly picked and slowly drop down until either hitting the base of the board or another tetrimino. The tetriminos slowly move faster as more lines are cleared. The game ends when the tetriminos are stacked all the way up and are outside the top of the board.
+Traveling Salesperson Problem
 
-https://en.wikipedia.org/wiki/Tetris
-
-Tetris has been one of my favorite games since I was a child. I have many great memories of playing the game with my Dad and other friends over the years. It is truly a timeless game and because of this I chose to remake it with my own twist.
+https://en.wikipedia.org/wiki/Travelling_salesman_problem
 
 #### Implementation
 - JavaScript
 - Google Map API
 
 #### Functionality
-- [x] Start and pause controls
-- [x] Rotation
-- [x] Drop
-- [x] Level based speed increase
-- [x] Instructions on how to play
+- [x] Genetic Algorithm
+- [x] Mark Placing on Google Map
+- [x] Calculating distance and duration using Google Distance Matrix API
 
 #### Genetic Algorithm
 
-Breaking the rotate functionality into several small methods made determining if a rotation could be made. The spin method determines if it is possible. First it gets the new coordinates of where the piece would be rotated to based on which direction the rotation is going. It then checks to see if the new coordinates are empty on the board and that the rotation would not put the tetrimino outside the board. If all of these conditions are met then the piece will be rotated.
+setup()
+  # Step 1: The Population
+  # Create an empty population (an array or ArrayList)
+  # Fill it with DNA encoded objects (pick random values to start)
+
+draw()
+  # Step 1: Selection
+  # Create an empty mating pool (an empty ArrayList)
+  # For every member of the population, evaluate its fitness based on some  criteria / function, and add it to the mating pool in a manner consistent with its fitness, i.e. the more fit it is the more times it appears in the mating pool, in order to be more likely picked for reproduction.
+
+  # Step 2: Reproduction Create a new empty population
+    # Fill the new population by executing the following steps:
+      1. Pick two "parent" objects from the mating pool.
+      2. Crossover -- create a "child" object by mating these two parents.
+      3. Mutation -- mutate the child's DNA based on a given probability.
+      4. Add the child object to the new population.
+    # Replace the old population with the new population
+  # Rinse and repeat
 
 
 ```JavaScript
