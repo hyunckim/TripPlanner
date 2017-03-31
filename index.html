@@ -2,6 +2,7 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="my_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAj-vRC7i6fOe2uvHJoQMvdyOI18x6yyAY"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <script src="lib/bundle.js"></script>
@@ -34,35 +35,40 @@
             </select>
           </div>
           <div class="settings">
-            <h3>Configuration</h3>
-            <label for="generation">Generation</label>
-            <select name="generation" class="generation">
-              <option value="50">50</option>
-              <option value="100">100</option>
-              <option value="120">120</option>
-            </select>
-            <label for="population">Population</label>
-            <select name="population" class="population">
-              <option value="10">10</option>
-              <option value="25">25</option>
-              <option value="50">50</option>
-            </select>
+            <div class="settings-options">
+              <h3>Configuration</h3>
+              <label for="generation">Generation</label>
+              <select name="generation" class="select generation">
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="120">120</option>
+              </select>
+              <label for="population">Population</label>
+              <select name="population" class="select population">
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+              </select>
 
-            <label for="mutation">Mutation Rate</label>
-            <select name="mutation" class="mutation">
-              <option value="0.01">0.01</option>
-              <option value="0.05">0.05</option>
-              <option value="0.10">0.10</option>
-            </select>
-
+              <label for="mutation">Mutation Rate</label>
+              <select name="mutation" class="select mutation">
+                <option value="0.01">0.01</option>
+                <option value="0.05">0.05</option>
+                <option value="0.10">0.10</option>
+              </select>
+            </div>
               <div class="results">
-                <h3>Result</h3>
-                <p class="gen">Generation: 0</p>
-                <p>Max destinations: 10</p>
-                <p class="duration"></p>
-                <p class="distance"></p>
-                <button class="start">Start</button>
-                <button class="clear">Clear</button>
+                <div class="result-content">
+                  <h3>Result</h3>
+                  <p class="gen">Generation: 0</p>
+                  <p>Max destinations: 10</p>
+                  <p class="duration">Duration: 0</p>
+                  <p class="distance">Distance: 0</p>
+                </div>
+                <div class="button">
+                  <button class="start">Start</button>
+                  <button class="clear">Clear</button>
+                </div>
               </div>
           </div>
       </div>
