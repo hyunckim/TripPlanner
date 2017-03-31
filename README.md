@@ -5,29 +5,29 @@ Traveling Salesperson Problem with Google Map API as visualizer.
 
 ![demo_2](/docs/trip_planner.gif)
 
-#### Background
+### Background
 
 Traveling Salesperson Problem
 
 https://en.wikipedia.org/wiki/Travelling_salesman_problem
 
-#### Implementation
+### Implementation
 - JavaScript
 - Google Map API
 
-#### Functionality
+### Functionality
 - [x] Genetic Algorithm
 - [x] Mark Placing on Google Map
 - [x] Calculating distance and duration using Google Distance Matrix API
 
-#### Genetic Algorithm
+### Genetic Algorithm
 
-####setup()
+#### setup()
   Step 1: The Population
     Create an empty population (an array or ArrayList)
     Fill it with DNA encoded objects (pick random values to start)
 
-####draw()
+#### draw()
   Step 1: Selection
     Create an empty mating pool (an empty ArrayList)
     For every member of the population, evaluate its fitness based on some  criteria / function, and add it to the mating pool in a manner consistent with its fitness, i.e. the more fit it is the more times it appears in the mating pool, in order to be more likely picked for reproduction.
